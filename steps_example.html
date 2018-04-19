@@ -1,0 +1,288 @@
+<html>
+<head>
+  <title>
+    Documentation using pretty looking steps
+  </title>
+
+  <link rel="icon" type="image/x-icon" href="/assets/images/site/favicon.ico">
+  <link rel="stylesheet" href="/assets/stylesheets/application.css">
+  <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+  <script src="/assets/javascripts/application.js"></script>
+
+  <meta name="Description" content=" This is an example of a way to document steps in a process">
+
+  <!-- <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-3769691-27']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script> -->
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+</head>
+
+<body>
+  <div class="article-body content-body wikistyle markdown-format">
+    <div class="intro">
+      <p>You can add a Jekyll theme to your GitHub Pages site by editing your site's <strong>_config.yml</strong> file.</p>
+    </div>
+
+    <p>GitHub Pages supports the officially <a href="https://pages.github.com/themes/">supported Jekyll themes</a>, as well as all <a href="https://github.com/topics/jekyll-theme">open source Jekyll themes hosted on GitHub</a>. You can also add supported
+      Jekyll themes to your GitHub Pages sites using the Jekyll Theme Chooser. For more information, see "<a href="/articles/about-jekyll-themes-on-github">About Jekyll themes on GitHub</a>."</p>
+
+    <p>You can override a Jekyll theme's defaults with your site's content in these folders:</p>
+
+    <ul>
+      <li><code>_layouts</code></li>
+      <li><code>_includes</code></li>
+      <li><code>_sass</code></li>
+      <li><code>assets</code></li>
+    </ul>
+
+    <p>For more information about the Jekyll theme files you can override, see your theme's README or other documentation in your theme's source repository.</p>
+
+    <h3>
+<a id="adding-a-jekyll-theme-in-your-sites-_configyml-file" class="anchor" href="#adding-a-jekyll-theme-in-your-sites-_configyml-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding a Jekyll theme in your site's <em>_config.yml</em> file</h3>
+
+    <ol>
+      <li>
+        <p>On GitHub, navigate to the main page of the repository.</p>
+      </li>
+      <li>
+        <p>In your repository, browse to <em>_config.yml</em>.</p>
+      </li>
+      <li><img src="/assets/images/help/pages/edit-config-file-on-GitHub.png" alt="open file editor with edit icon">In the upper-right corner of the file view, click <span class="octicon octicon-pencil" aria-label="The edit icon " title="The edit icon "></span>        to open the file editor.
+
+      </li>
+      <li>Activate the theme by adding a new line to your <em>_config.yml</em> with the theme name:
+
+        <ul>
+          <li><img src="/assets/images/help/pages/add-theme-to-config-file.png" alt="Add theme to config file">To activate one of the officially <a href="https://pages.github.com/themes/">supported themes</a>, type <code>theme:</code> followed by the name
+            of the theme (as shown in the README in the theme's source repository).
+
+          </li>
+          <li><img src="/assets/images/help/pages/add-remote-theme-to-config-file.png" alt="Add remote theme to config file">To activate any other open source Jekyll theme hosted on GitHub, type <code>remote_theme:</code> followed by the name of the theme
+            (as shown in the README or other documentation in the theme's source repository).
+
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p><img src="/assets/images/help/repository/write-commit-message-quick-pull.png" alt="Commit message for your change">At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file. You can attribute
+          the commit to more than one author in the commit message. For more information, see "<a href="/articles/creating-a-commit-with-multiple-authors">Creating a commit with multiple co-authors</a>."
+        </p>
+      </li>
+      <li>
+        <p><img src="/assets/images/help/repository/choose-commit-branch.png" alt="Commit branch options">Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is <code>master</code>,
+          you should choose to create a new branch for your commit and then <a href="/articles/creating-a-pull-request">create a pull request</a>.
+        </p>
+      </li>
+      <li>
+        <p><img src="/assets/images/help/repository/propose-file-change-quick-pull.png" alt="Propose file change button">Click <strong>Propose file change</strong>.
+        </p>
+      </li>
+      <li>
+        <p>If you created a pull request, <a href="/articles/merging-a-pull-request/">merge your pull request</a> into your GitHub Pages publishing branch, which is usually <code>master</code> and sometimes <code>gh-pages</code>.</p>
+      </li>
+    </ol>
+
+    <p>Your site should now publish with the new theme you added.</p>
+
+    <h3>
+<a id="previewing-your-jekyll-theme-locally" class="anchor" href="#previewing-your-jekyll-theme-locally" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Previewing your Jekyll theme locally</h3>
+
+    <p>After <a href="#adding-a-jekyll-theme-in-your-sites-_configyml-file">adding a Jekyll theme in your site's <em>_config.yml</em> file on GitHub</a>, you can preview the theme locally by following the steps detailed in the sections below.</p>
+
+    <p>Before attempting to preview your Jekyll theme locally, ensure the following:</p>
+
+    <ul>
+      <li>You have a local copy of your remote GitHub Pages site repository on your computer. If you don't have a local copy of your site repository, see "<a href="/articles/cloning-a-repository">Cloning a repository</a>." If you don't have a remote GitHub
+        Pages site repository on GitHub yet you can use someone else's open source site repository as a starting template and <a href="/articles/fork-a-repo/">fork it</a>.</li>
+      <li>You have <a href="/articles/setting-up-your-github-pages-site-locally-with-jekyll/#requirements">Bundler installed</a>.</li>
+    </ul>
+
+    <h4>
+<a id="adding-your-theme-as-a-gem-to-your-gemfile" class="anchor" href="#adding-your-theme-as-a-gem-to-your-gemfile" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding your theme as a Gem to your <em>Gemfile</em>
+</h4>
+
+    <div class="alert note">
+
+      <p><strong>Note:</strong> If you're using the web-only interface to edit, you don't need to add your theme to the site's Gemfile, if one exists.</p>
+
+    </div>
+
+    <ol>
+      <li>
+        <p>On GitHub, navigate to the main page of the repository.</p>
+      </li>
+      <li>
+        <p>In your repository, browse to <em>Gemfile</em>.</p>
+      </li>
+      <li>In the upper-right corner of the file view, click <span class="octicon octicon-pencil" aria-label="The edit icon " title="The edit icon "></span> to open the file editor.</li>
+      <li>
+        <p><img src="/assets/images/steps/placeholder_image.jpg" alt="placeholder">Add a new line to your <em>Gemfile</em> with the theme name in quotations:
+        </p>
+
+        <div class="alert tip">
+
+          <p><strong>Tip:</strong> You can add multiple Jekyll themes to your <em>Gemfile</em> but to activiate a theme, only one theme can be added to your <em>_config.yml</em> file.</p>
+
+        </div>
+      </li>
+      <li>
+        <p><img src="/assets/images/steps/placeholder_image.jpg" alt="placeholder">At the bottom of the page, type a short, meaningful commit message that describes the change you made to the file. You can attribute
+          the commit to more than one author in the commit message. For more information, see "<a href="/articles/creating-a-commit-with-multiple-authors">Creating a commit with multiple co-authors</a>."
+        </p>
+      </li>
+      <li>
+        <p><img src="/assets/images/steps/placeholder_image.jpg" alt="placeholder">Below the commit message fields, decide whether to add your commit to the current branch or to a new branch. If your current branch is <code>master</code>,
+          you should choose to create a new branch for your commit and then <a href="/articles/creating-a-pull-request">create a pull request</a>.
+        </p>
+      </li>
+      <li>
+        <p><img src="/assets/images/steps/placeholder_image.jpg" alt="placeholder">Click <strong>Propose file change</strong>.
+        </p>
+      </li>
+      <li>
+        <p>If you created a pull request, <a href="/articles/merging-a-pull-request/">merge your pull request</a> into your GitHub Pages publishing branch, which is usually <code>master</code> and sometimes <code>gh-pages</code>. For more information on
+          which branch to publish your site with, see "<a href="/articles/user-organization-and-project-pages">User, Organization, and Project Pages</a>."</p>
+      </li>
+    </ol>
+
+    <h4>
+<a id="installing-your-theme-using-bundler" class="anchor" href="#installing-your-theme-using-bundler" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installing your theme using Bundler</h4>
+
+    <ol>
+      <li>
+        <p>Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.</p>
+      </li>
+      <li>
+        <p>Navigate into your local GitHub Pages site repository:</p>
+
+        <pre class="command-line"><span class="command">cd my-pages-site-repository</span>
+</pre>
+      </li>
+      <li>
+        <p>Load your changes from your remote site repository on GitHub to your local site repository:</p>
+
+        <pre class="command-line"><span class="command">git pull</span>
+</pre>
+
+        <div class="alert tip">
+
+          <p><strong>Tip:</strong> For more information on using <code>git pull</code>, see "<a href="/articles/fetching-a-remote/#pull">Fetching a remote</a>."</p>
+
+        </div>
+      </li>
+      <li>
+        <p>Install your Jekyll theme Gem using Bundler:</p>
+
+        <pre class="command-line"><span class="command">bundle install</span>
+<span class="output">Fetching gem metadata from https://rubygems.org/............</span>
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+. . .
+Installing minima 1.0.1
+Using bundler 1.10.6
+Bundle complete! 2 Gemfile dependencies, 54 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+</pre>
+      </li>
+      <li>
+        <p><a href="/articles/pushing-to-a-remote/">Push your changes</a> up to your remote GitHub Pages site repository on GitHub, replacing <code>master</code> in the example below with <code>gh-pages</code> if you use a <code>gh-pages</code> branch to
+          publish your site:</p>
+
+        <pre class="command-line"><span class="command">git push origin master</span>
+</pre>
+      </li>
+    </ol>
+
+    <h3>
+<a id="adding-a-jekyll-theme-on-the-command-line" class="anchor" href="#adding-a-jekyll-theme-on-the-command-line" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Adding a Jekyll theme on the command line</h3>
+
+    <ol>
+      <li>
+        <p>Open <span class="platform-mac">Terminal</span><span class="platform-linux">Terminal</span><span class="platform-windows">Git Bash</span>.</p>
+      </li>
+      <li>
+        <p>Navigate into your local site repository:</p>
+
+        <pre class="command-line"><span class="command">cd my-pages-site-repository</span>
+</pre>
+      </li>
+      <li>
+        <p>To add a theme to your site's <em>Gemfile</em>, open your favorite text editor, such as <a href="https://atom.io/">Atom</a>, and add this line to your <em>Gemfile</em> using your selected theme's name in quotations:</p>
+
+        <pre class="command-line">gem "minima"
+<span class="comment"># Minima is a default theme for Jekyll sites.</span>
+</pre>
+
+        <div class="alert tip">
+
+          <p><strong>Tip:</strong> You can add multiple Jekyll themes to your <em>Gemfile</em> but only one of these themes can be added to your <em>_config.yml</em> file to activate your theme.</p>
+
+        </div>
+      </li>
+      <li>
+        <p>Install your Jekyll theme Gem using Bundler:</p>
+
+        <pre class="command-line"><span class="command">bundle install</span>
+<span class="output">Fetching gem metadata from https://rubygems.org/............</span>
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+. . .
+Installing minima 1.0.1
+Using bundler 1.10.6
+Bundle complete! 2 Gemfile dependencies, 54 gems now installed.
+Use `bundle show [gemname]` to see where a bundled gem is installed.
+</pre>
+      </li>
+      <li>
+        <p>To activate your theme, using your favorite text editor, add a new line to your site's <em>_config.yml</em> file with your theme's name:</p>
+
+        <pre class="command-line">theme: minima
+</pre>
+      </li>
+      <li>
+        <p>Add and commit your changes using Git:</p>
+
+        <pre class="command-line"><span class="command">git commit -a</span>
+<span class="comment"># Adds your changes</span>
+<span class="command">git commit -m "added theme to Gemfile &amp; _config.yml"</span>
+<span class="comment"># Commits your changes with a commit message</span>
+</pre>
+      </li>
+      <li>
+        <p><a href="/articles/pushing-to-a-remote/">Push your changes</a> up to your remote GitHub Pages site repository, replacing <code>master</code> in the example below with <code>gh-pages</code> if you use a <code>gh-pages</code> branch to publish your
+          site::</p>
+
+        <pre class="command-line"><span class="command">git push origin master</span>
+</pre>
+      </li>
+    </ol>
+
+    <p>Your site should now publish with the new theme you added.</p>
+
+    <h3>
+<a id="further-reading" class="anchor" href="#further-reading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further reading</h3>
+
+    <ul>
+      <li><a href="https://jekyllrb.com/docs/themes/">Jekyll's official documentation on Themes</a></li>
+      <li>"<a href="/articles/about-jekyll-themes-on-github">About Jekyll themes on GitHub</a>"</li>
+      <li>"<a href="/articles/adding-a-jekyll-theme-to-your-github-pages-site-with-the-jekyll-theme-chooser">Adding a Jekyll theme to your GitHub Pages site with the Jekyll Theme Chooser</a>"</li>
+      <li>"<a href="/articles/customizing-css-and-html-in-your-jekyll-theme">Customizing CSS and HTML in your Jekyll theme</a>"</li>
+    </ul>
+  </div>
+</body>
+
+</html>
